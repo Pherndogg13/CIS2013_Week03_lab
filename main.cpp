@@ -24,9 +24,14 @@ int main(){
 		cout << num1 << " + " << num2 << " - " << (num1 + num2);
 	} else if (('S' == op) || ('s' == op)) {
 		cout << num1 << " - " << num2 << " = " << (num1 - num2);
-	} else {
+	} 
+	  else if (('S' == op) || ('s' == op)){
+		  cout << num1 << " x " << num2 << " = " << (num1 * num2);
+	}
+	else {
 		cout << op << "is not a valid option....." << endl;
 	}
+		
 		
 		
 		cout << " Do you want to use Calculator again (Y/n)? ";
