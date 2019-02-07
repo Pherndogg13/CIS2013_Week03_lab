@@ -5,6 +5,8 @@ int main(){
 	
 	char op = 'A';
 	char again = 'Y';
+	int num1 = 0;
+	int num2 = 0;
 	
 	cout << "Our C++ Calculator\n ";
 	
@@ -12,6 +14,15 @@ int main(){
 	while('n' != again) {
 		cout << "(A)dd or (S)ubtract?";
 		cin >> op;
+		
+		cout << "Enter first number; ";
+		cin >> num1;
+		cout << "Enter second number; ";
+		cin >> num2;
+		
+		cout << num1 << " + " << num2 << " - " << (num1 + num2);
+		
+		
 		cout << " Do you want to use Calculator again (Y/n)? ";
 		cin >> again;
 	}
