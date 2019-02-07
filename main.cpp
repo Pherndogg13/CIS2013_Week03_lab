@@ -20,7 +20,13 @@ int main(){
 		cout << "Enter second number; ";
 		cin >> num2;
 		
+	if(('A' == op )|| ('a' == op)) {
 		cout << num1 << " + " << num2 << " - " << (num1 + num2);
+	} else if (('S' == op) || ('s' == op)) {
+		cout << num1 << " - " << num2 << " = " << (num1 - num2);
+	} else {
+		cout << op << "is not a valid option....." << endl;
+	}
 		
 		
 		cout << " Do you want to use Calculator again (Y/n)? ";
